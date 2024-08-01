@@ -1,0 +1,135 @@
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Arial', sans-serif;
+     overflow: hidden;
+     color: white;
+ }
+ 
+ .background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 150vh;
+     background: url('./Hero\ \(1\).png') no-repeat center center fixed;
+     background-size: cover;
+     z-index: -1;
+ }
+ 
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     background: url('./Vector.png') ;
+     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+ }
+ 
+ .logo {
+     font-size: 1.5em;
+     font-weight: bold;
+ }
+ 
+ nav a {
+     margin: 0 15px;
+     text-decoration: none;
+     color: white;
+     font-size: 1em;
+ }
+ 
+ .right-info {
+     font-size: 0.9em;
+ }
+ 
+ main {
+     text-align: center;
+     padding: 100px 20px;
+    height: 50vh;
+ }
+ 
+ h1 {
+     font-size: 3em;
+     margin-bottom: 20px;
+ }
+ 
+ p {
+     font-size: 1.2em;
+     margin-bottom: 40px;
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .learn-more {
+     display: inline-block;
+     padding: 15px 30px;
+     font-size: 1.2em;
+     background: linear-gradient(to right, #ff5f6d, #ffc371);
+     color: white;
+     text-decoration: none;
+     border-radius: 25px;
+ }
+ 
+ .planets {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none; /* Prevent interaction with the planets */
+     z-index: -1; /* Behind other content */
+ }
+ 
+ .planet1 {
+    position: absolute;
+    bottom: 0;
+   right: 0;
+    width: 30%;
+    height: auto;
+}
+
+.planet2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: auto;
+}
+
+.planet3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: auto;
+}
+
+.planet4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: auto;
+}
+
+
+.solar-system {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #21003c;
+}
+
+.sun-section, .planet {
+    background-color: #3e005c;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.planet-info p {
+    margin: 5px 0;
+}
